@@ -1,6 +1,6 @@
 const cityInput = document.getElementById('input-city')
 const select = document.getElementById('select-country');
-const bg = document.getElementsByClassName('second-container');
+
 
 cityInput.value = 'Santa fe'
 addDataCurrent()

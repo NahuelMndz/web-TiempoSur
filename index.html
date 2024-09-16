@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoSur</title>
+</head>
+<body>
+    <div class="container">
+        <div class="first-container">
+            <h1 class="title">TiempoSur</h1>
+            <p class="subtitle">El clima en las Ciudades de America del Sur</p>
+            <div class="search-container">
+                <select name="" id="select-country">
+                    <option value="AR" selected>AR</option>
+                    <option value="BO">BO</option>
+                    <option value="BR">BR</option>
+                    <option value="CL">CHI</option>
+                    <option value="CO">CO</option>
+                    <option value="PE">PE</option>
+                    <option value="UY">URU</option>
+                    <option value="PY">PAR</option>
+                    <option value="VE">VEN</option>
+                    <option value="EC">ECU</option>
+                    <option value="GY">GY</option>
+                    <option value="SR">SUR</option>
+                    <option value="GF">GUA</option>
+                </select>
+                <input type="text" id="input-city" placeholder="El tiempo en...">
+            </div>
+            <button onclick="showWeather()">Buscar</button>
+        </div>
+        <div class="second-container">
+            <div class="weather-container">
+                <section class="first-section">
+                    <img id="img-city" >
+                    <div class="container-name-date">
+                        <span id="name-city"></span>
+                        <span id="date-city"></span>
+                    </div>
+                    <span id="temp-city"></span>
+                </section>
+                <section class="second-section">
+                    <div class="flex-container">
+                        <div class="container-info">
+                            <img src="img/amanecer.png" alt="">
+                            <div class="container-stats">
+                                <span class="name-data">Amanecer</span>
+                                <span class="data" id="sunrise"></span>
+                            </div>
+                        </div>
+                        <div class="container-info">
+                            <img src="img/atardecer.png" alt="">
+                            <div class="container-stats">
+                                <span class="name-data">Atardecer</span>
+                                <span class="data" id="sunset"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="container-info">
+                            <img src="img/humedad.png" alt="">
+                            <div class="container-stats">
+                                <span class="name-data">Humedad</span>
+                                <span class="data" id="humidity"></span>
+                            </div>
+                        </div>
+                        <div class="container-info">
+                            <img src="img/wind.png" alt="viento">
+                            <div class="container-stats">
+                                <span class="name-data">Vientos</span>
+                                <span class="data" id="wind"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="third-section">
+                    <div class="container-days">
+                        <span class="day"></span>
+                        <img id="icon-day"  alt="">
+                        <span class="max-temp"></span>
+                    </div>
+                    <div class="container-days">
+                        <span class="day"></span>
+                        <img id="icon-day" src="" alt="">
+                        <span class="max-temp"></span>
+                    </div>
+                    <div class="container-days">
+                        <span class="day"></span>
+                        <img id="icon-day" src="" alt="">
+                        <span class="max-temp"></span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
